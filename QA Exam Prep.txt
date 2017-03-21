@@ -1,0 +1,19 @@
+GIVEN – Pre-conditions for a test
+WHEN – Steps taken to achieve the target of the test. Click here, type there, etc. Some kind of interaction
+THEN – Result of the test. Should contain expected and actual result. Expected results come from the SRS (Software Requirements Specifications)
+
+Create face dummy github accounts. Register accounts on mailinator.com (or https://www.guerrillamail.com/) for github. Edit repo settings and add colaborators, enter the usernames to send invites. Open the mail in mailinator.com and accept the invites. Then with main account -> Issues -> New Issue -> Assignees. Maybe the guest account has to confirm the assignment?
+
+User story:
+As a <type of user>, I want <some goal> so that <some reason>.
+User story:
+https://trello.com/
+Wherever I find search/get forms, try any naughty strings.
+
+For Unit Testing, create new Visual C# Unit Test Project. 
+Manage NuGetPackages => Selenium.Support & Selenium.ChromeDriver
+https://github.com/PetarDimitrov86/SoftUniQA/tree/master/SeleniumTest
+https://developers.google.com/chart/interactive/docs/quick_start
+
+For Notepad++ add cucumber/gherking syntax highlighting. Then create file with extension .feature to enable coloring:
+https://github.com/famished-tiger/gherkin-highlighting
