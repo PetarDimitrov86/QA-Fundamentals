@@ -12,8 +12,11 @@
         [TestMethod]
         public void TryLogin()
         {
+            // Arrange
             IWebDriver driver = new ChromeDriver();
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            
+            // Act
             driver.Navigate().GoToUrl("http://www.abv.bg/");
             driver.Manage().Window.Maximize();
             driver.FindElement(By.Id("username")).SendKeys("qasoftunirandom");
@@ -25,6 +28,7 @@
             string expectedUsername = "Kichka Bodurova";
             string actualUsername = driver.FindElement(By.ClassName("userName")).Text;
 
+            // Assert
             Assert.AreEqual(expectedUsername, actualUsername);
             driver.Quit();
         }
